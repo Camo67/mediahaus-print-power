@@ -8,7 +8,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Inkjet Media", href: "#inkjet" },
+    { label: "Inkjet Media", href: "/inkjet-media" },
     { label: "Solvent Media", href: "#solvent" },
     { label: "DTF Media", href: "#dtf" },
     { label: "Finishing Films", href: "#finishing" },

@@ -12,7 +12,7 @@ const ProductCategories = () => {
       description: "Indoor papers and films for high quality prints.",
       icon: Printer,
       image: indoorLamination,
-      href: "#inkjet",
+      href: "/inkjet-media",
     },
     {
       title: "Solvent Vinyl",
