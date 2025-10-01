@@ -9,10 +9,10 @@ const Header = () => {
 
   const navLinks = [
     { label: "Inkjet Media", href: "/inkjet-media" },
-    { label: "Solvent Media", href: "#solvent" },
-    { label: "DTF Media", href: "#dtf" },
-    { label: "Finishing Films", href: "#finishing" },
-    { label: "Contact", href: "#contact" },
+    { label: "Solvent Media", href: "/solvent-media" },
+    { label: "DTF Media", href: "/dtf-media" },
+    { label: "Finishing Films", href: "/finishing-films" },
+    { label: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -26,13 +26,23 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="px-4 py-2 text-sm font-medium text-foreground hover:text-accent transition-colors"
-              >
-                {link.label}
-              </a>
+              link.href.startsWith('/') && !link.href.startsWith('/#') ? (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="px-4 py-2 text-sm font-medium text-foreground hover:text-accent transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="px-4 py-2 text-sm font-medium text-foreground hover:text-accent transition-colors"
+                >
+                  {link.label}
+                </a>
+              )
             ))}
           </nav>
 
@@ -57,18 +67,29 @@ const Header = () => {
         {mobileMenuOpen && (
           <nav className="md:hidden py-4 border-t border-border">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="block px-4 py-3 text-sm font-medium text-foreground hover:bg-secondary transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {link.label}
-              </a>
+              link.href.startsWith('/') && !link.href.startsWith('/#') ? (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="block px-4 py-3 text-sm font-medium text-foreground hover:bg-secondary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="block px-4 py-3 text-sm font-medium text-foreground hover:bg-secondary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              )
             ))}
             <div className="px-4 pt-2">
               <Button asChild className="w-full">
-                <a href="#contact">Request Quote</a>
+                <a href="/#contact">Request Quote</a>
               </Button>
             </div>
           </nav>

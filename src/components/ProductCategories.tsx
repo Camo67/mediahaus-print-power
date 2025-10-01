@@ -19,21 +19,21 @@ const ProductCategories = () => {
       description: "Durable outdoor vinyl for all signage and wraps.",
       icon: Palette,
       image: heroRolls,
-      href: "#solvent",
+      href: "/solvent-media",
     },
     {
       title: "Finishing Films",
       description: "Adhesive & Lamination films for protection.",
       icon: Shield,
       image: outdoorLamination,
-      href: "#finishing",
+      href: "/finishing-films",
     },
     {
       title: "DTF Media",
       description: "Direct-to-garment transfer films (no weeding).",
       icon: Shirt,
       image: prodDtg,
-      href: "#dtf",
+      href: "/dtf-media",
     },
   ];
 
