@@ -8,11 +8,9 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Inkjet Media", href: "/inkjet-media" },
-    { label: "Solvent Media", href: "/solvent-media" },
-    { label: "DTF Media", href: "/dtf-media" },
-    { label: "Finishing Films", href: "/finishing-films" },
-    { label: "Contact", href: "/#contact" },
+    { label: "Home", href: "/" },
+    { label: "Products", href: "/products" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
@@ -48,7 +46,7 @@ const Header = () => {
 
           <div className="hidden md:block">
             <Button asChild>
-              <a href="#contact">Request Quote</a>
+              <a href="/contact">Request Quote</a>
             </Button>
           </div>
 
@@ -89,7 +87,7 @@ const Header = () => {
             ))}
             <div className="px-4 pt-2">
               <Button asChild className="w-full">
-                <a href="/#contact">Request Quote</a>
+                <a href="/contact">Request Quote</a>
               </Button>
             </div>
           </nav>

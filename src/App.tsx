@@ -4,10 +4,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import InkjetMedia from "./pages/InkjetMedia";
-import SolventMedia from "./pages/SolventMedia";
-import DTFMedia from "./pages/DTFMedia";
-import FinishingFilms from "./pages/FinishingFilms";
+import Products from "./pages/Products";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,10 +18,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/inkjet-media" element={<InkjetMedia />} />
-          <Route path="/solvent-media" element={<SolventMedia />} />
-          <Route path="/dtf-media" element={<DTFMedia />} />
-          <Route path="/finishing-films" element={<FinishingFilms />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

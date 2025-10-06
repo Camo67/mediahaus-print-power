@@ -13,19 +13,14 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
-            <Link to="/" className="hover:text-foreground transition-colors">
-              Privacy
-            </Link>
-            <Link to="/" className="hover:text-foreground transition-colors">
-              Terms
-            </Link>
-            <a href="#contact" className="hover:text-foreground transition-colors">
+            <Link to="/contact" className="hover:text-foreground transition-colors">
               Contact
-            </a>
+            </Link>
           </div>
 
-          <div className="text-sm text-muted-foreground">
-            © {currentYear} MEDIAHAUS — All rights reserved.
+          <div className="text-sm text-muted-foreground text-center">
+            <p>© {currentYear} MEDIAHAUS — All rights reserved.</p>
+            <p className="mt-1">A DesignMedia Production.</p>
           </div>
         </div>
       </div>
