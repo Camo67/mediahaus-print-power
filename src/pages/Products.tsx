@@ -9,7 +9,7 @@ import photoPaper from "@/assets/photo-paper.jpg";
 import canvas from "@/assets/canvas.jpg";
 import mattVinyl from "@/assets/matt-vinyl.jpg";
 import glossVinyl from "@/assets/gloss-vinyl.jpg";
-import castVinyl from "@/assets/cast-vinyl.jpg";
+import castVinyl from "@/assets/camo.jpeg";
 import blockoutBanner from "@/assets/blockout-banner.jpg";
 import dtfFilm from "@/assets/dtf-film.jpg";
 import dtfPowder from "@/assets/dtf-powder.jpg";
