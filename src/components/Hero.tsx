@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
-import heroImage from "@/assets/hero-rolls.jpg";
+import heroImage from "@/assets/carwrap.jpg";
 
 const Hero = () => {
   return (
@@ -29,7 +29,7 @@ const Hero = () => {
           <div className="relative rounded-lg overflow-hidden shadow-lg">
             <img
               src={heroImage}
-              alt="Print media rolls in warehouse"
+              alt="Custom vinyl car wrap showcasing vibrant multicolor design"
               className="w-full h-auto"
             />
           </div>
