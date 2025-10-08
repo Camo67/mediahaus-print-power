@@ -1,25 +1,6 @@
 name = "mediahause"
-main = "dist/index.js"
 compatibility_date = "2025-10-05"
-account_id = "your-cloudflare-account-id"
-
-workers_dev = true
-type = "javascript"
+pages_build_output_dir = "dist"
 
 [build]
 command = "npm run build"
-cwd = "."
-watch_dir = "src"
-
-[site]
-bucket = "./dist"
-entry-point = "."
-
-[vars]
-APP_NAME = "Mediahause"
-ENVIRONMENT = "production"
-VITE_API_URL = "https://api.mediahause.workers.dev"
-BRAND_MOTTO = "Ink. Vision. Motion."
-
-[observability]
-enabled = true
