@@ -1,12 +1,4 @@
-{
-  "name": "mediahaus-print-power",
-  "private": true,
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview --port 5173"
-  },
-  "devDependencies": {
-    "vite": "^5.4.0"
-  }
-}
+# wrangler.toml  (Pages)
+name = "mediahaus-print-power"
+pages_build_output_dir = "dist"
+compatibility_date = "2025-10-08"
