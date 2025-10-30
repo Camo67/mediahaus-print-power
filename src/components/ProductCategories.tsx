@@ -1,5 +1,5 @@
 import { ArrowRight, Printer, Palette, Shield, Shirt } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 import indoorLamination from "@/assets/indoor-lamination.jpg";
 import outdoorLamination from "@/assets/outdoor-lamination.jpg";
 import prodDtg from "@/assets/prod-dtg.jpg";
@@ -15,7 +15,7 @@ const ProductCategories = () => {
       href: "/inkjet-media",
     },
     {
-      title: "Solvent Vinyl",
+      title: "Solvent Media",
       description: "Durable outdoor vinyl for all signage and wraps.",
       icon: Palette,
       image: heroRolls,
@@ -33,7 +33,7 @@ const ProductCategories = () => {
       description: "Direct-to-garment transfer films (no weeding).",
       icon: Shirt,
       image: prodDtg,
-      href: "/dtf-media",
+      href: "/dtg-films",
     },
   ];
 
@@ -52,13 +52,13 @@ const ProductCategories = () => {
           return (
             <a key={index} href={category.href} className="group">
               <Card className="h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-                <div className="relative h-48 overflow-hidden rounded-t-lg">
+                <div className="relative h-64 overflow-hidden rounded-t-lg bg-muted">
                   <img
                     src={category.image}
                     alt={category.title}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    className="w-full h-full object-contain transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <div className="absolute inset-0 pointer-events-none"></div>
                   <div className="absolute bottom-4 left-4">
                     <Icon className="w-8 h-8 text-white" />
                   </div>

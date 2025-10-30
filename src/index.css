@@ -125,3 +125,42 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* Rainbow glow hover effect for desktop */
+@keyframes rainbow-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@layer components {
+  .rainbow-glow {
+    position: relative;
+    z-index: 0;
+  }
+  .rainbow-glow::before {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    z-index: -1;
+    background: linear-gradient(
+      90deg,
+      hsl(var(--cyan)),
+      hsl(var(--magenta)),
+      hsl(var(--yellow)),
+      hsl(var(--cyan))
+    );
+    background-size: 300% 300%;
+    filter: blur(14px);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    border-radius: 9999px; /* match rounded buttons */
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .rainbow-glow:hover::before {
+    opacity: 0.9;
+    animation: rainbow-shift 2s linear infinite;
+  }
+}
