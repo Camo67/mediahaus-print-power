@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 import TikTokIcon from "@/components/icons/TikTok";
+import XIcon from "@/components/icons/X";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -52,10 +53,10 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-foreground transition-colors"
-                aria-label="X (Twitter)"
-                title="X (Twitter)"
+                aria-label="X"
+                title="X"
               >
-                <Twitter className="h-5 w-5" />
+                <XIcon className="h-5 w-5" />
               </a>
             </div>
           </div>

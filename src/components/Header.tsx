@@ -1,7 +1,8 @@
 import { useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Facebook, Instagram, Twitter, ChevronDown } from "lucide-react";
+import { Menu, X, Facebook, Instagram, ChevronDown } from "lucide-react";
 import TikTokIcon from "@/components/icons/TikTok";
+import XIcon from "@/components/icons/X";
 import { Button } from "../components/ui/button";
 import ThemeToggle from "@/components/ThemeToggle";
 
@@ -161,11 +162,11 @@ const Header = () => {
                 href="https://x.com/mediahaus"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="X (Twitter)"
+                aria-label="X"
                 className="text-muted-foreground hover:text-accent transition-colors"
-                title="X (Twitter)"
+                title="X"
               >
-                <Twitter className="h-5 w-5" />
+                <XIcon className="h-5 w-5" />
               </a>
               <a
                 href="https://www.tiktok.com/@mediahausmarketin?is_from_webapp=1&sender_device=pc"
@@ -269,8 +270,8 @@ const Header = () => {
               <a href="#" aria-label="Instagram (coming soon)" className="text-muted-foreground hover:text-accent transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="https://x.com/mediahaus" target="_blank" rel="noreferrer" aria-label="X (Twitter)" className="text-muted-foreground hover:text-accent transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a href="https://x.com/mediahaus" target="_blank" rel="noreferrer" aria-label="X" className="text-muted-foreground hover:text-accent transition-colors">
+                <XIcon className="h-5 w-5" />
               </a>
               <a href="https://www.tiktok.com/@mediahausmarketin?is_from_webapp=1&sender_device=pc" target="_blank" rel="noreferrer" aria-label="TikTok" className="text-muted-foreground hover:text-accent transition-colors">
                 <TikTokIcon className="h-5 w-5" />
