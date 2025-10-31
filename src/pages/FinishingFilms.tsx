@@ -9,7 +9,8 @@ const FinishingFilms = () => {
   const products = [
     {
       name: "Gloss Lamination",
-      description: "Crystal clear gloss laminate for print protection and enhancement. UV resistant with excellent clarity.",
+      description:
+        "Crystal clear gloss laminate for print protection and enhancement. UV resistant with excellent clarity.",
       image: glossLaminate,
       specs: {
         thickness: "75 Microns, 100 Microns",
@@ -20,8 +21,33 @@ const FinishingFilms = () => {
       },
     },
     {
+      name: "Double-sided Mounting Film",
+      description:
+        "A clear polyester mounting film, coated on both sides with a permanent pressure sensitive acrylic adhesive, one of which is protected by a Kraft siliconized release liner and one side a film release liner. The perfect product for the mounting of graphics onto various substrates such as correx etc.",
+      image: mountingAdhesive,
+      specs: {
+        thickness: "45 Micron",
+        finish: "N/A",
+        sizes: "1040mm, 1270mm",
+        length: "33m",
+      },
+    },
+    {
+      name: "Optically Clear Double-sided Mounting Film",
+      description:
+        "A 100% optically transparent polyester film. Both sides of the film have a high-viscosity solvent-acrylic adhesive that are protected by a clear film lining. Used for special applications that require full clarity, such as mounting a print to acrylic or glass.",
+      image: mountingAdhesive,
+      specs: {
+        thickness: "25 Micron",
+        finish: "N/A",
+        sizes: "1300mm",
+        length: "25m, 50m",
+      },
+    },
+    {
       name: "Matt Lamination",
-      description: "Anti-glare matt laminate for professional finish without reflections. Perfect for indoor displays and posters.",
+      description:
+        "Anti-glare matt laminate for professional finish without reflections. Perfect for indoor displays and posters.",
       image: mattLaminate,
       specs: {
         thickness: "75 Microns, 100 Microns",

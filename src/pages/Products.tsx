@@ -59,12 +59,27 @@ const Products = () => {
       ],
     },
     {
-      name: "Canvas",
+      name: "Polyester Canvas (Canvas Light)",
       category: "Inkjet Media",
-      description: "High-quality canvas substrates for art reproductions. Available in polyester (Canvas Light) and cotton (Classic Canvas) varieties.",
+      description:
+        "A good quality polyester/cotton blended canvas with an inkjet coating. Used to print photographic and art reproductions. Can be stretched over a frame without the edges cracking.",
       image: canvas,
       specs: [
-        { label: "Thickness", value: "260gsm (Polyester), 350gsm (Cotton)" },
+        { label: "Thickness", value: "260gsm" },
+        { label: "Finish", value: "Matt" },
+        { label: "Available Sizes", value: "432mm, 610mm, 914mm, 1118mm, 1524mm" },
+        { label: "Length", value: "18m" },
+        { label: "Printer Compatibility", value: "Inkjet, Latex, UV" },
+      ],
+    },
+    {
+      name: "Cotton Canvas (Classic Canvas)",
+      category: "Inkjet Media",
+      description:
+        "An exceptional quality pure cotton canvas with an inkjet coating. Used to print photographic and art reproductions. Can be stretched over a frame without the edges cracking.",
+      image: canvas,
+      specs: [
+        { label: "Thickness", value: "350gsm" },
         { label: "Finish", value: "Matt" },
         { label: "Available Sizes", value: "432mm, 610mm, 914mm, 1118mm, 1524mm" },
         { label: "Length", value: "18m" },
@@ -111,14 +126,15 @@ const Products = () => {
       ],
     },
     {
-      name: "Blockout Banner",
+      name: "Blockout PVC",
       category: "Solvent Media",
-      description: "Heavy-duty banner material with blockout layer for double-sided printing.",
+      description:
+        "A high-strength laminated flex (1000 x 1000 DIN) designed for outdoor use for billboards and banners. The black back gives 100% opacity so if the sun shines from behind, it does not interfere with the image printed on it.",
       image: blockoutBanner,
       specs: [
-        { label: "Thickness", value: "510gsm" },
+        { label: "Thickness", value: "510 gsm" },
         { label: "Finish", value: "Matt" },
-        { label: "Available Sizes", value: "1370mm, 1520mm, 3200mm" },
+        { label: "Available Sizes", value: "1370mm, 1600mm, 3200mm" },
         { label: "Length", value: "50m" },
         { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex, UV" },
       ],
@@ -149,29 +165,31 @@ const Products = () => {
       ],
     },
     {
-      name: "Gloss Laminate",
+      name: "Gloss Lamination",
       category: "Finishing Films",
-      description: "High-gloss protection film for outdoor durability and UV resistance.",
+      description:
+        "Crystal clear gloss laminate for print protection and enhancement. UV resistant with excellent clarity.",
       image: glossLaminate,
       specs: [
-        { label: "Thickness", value: "75 Microns" },
+        { label: "Thickness", value: "75 Microns, 100 Microns" },
         { label: "Finish", value: "Gloss" },
         { label: "Available Sizes", value: "1370mm, 1520mm" },
-        { label: "Length", value: "50m" },
-        { label: "UV Protection", value: "3-5 years" },
+        { label: "Length", value: "50m, 100m" },
+        { label: "Application", value: "Cold lamination" },
       ],
     },
     {
-      name: "Matt Laminate",
+      name: "Matt Lamination",
       category: "Finishing Films",
-      description: "Anti-glare matt laminate for indoor displays and elegant finishes.",
+      description:
+        "Anti-glare matt laminate for professional finish without reflections. Perfect for indoor displays and posters.",
       image: mattLaminate,
       specs: [
-        { label: "Thickness", value: "75 Microns" },
+        { label: "Thickness", value: "75 Microns, 100 Microns" },
         { label: "Finish", value: "Matt" },
         { label: "Available Sizes", value: "1370mm, 1520mm" },
-        { label: "Length", value: "50m" },
-        { label: "UV Protection", value: "Indoor use" },
+        { label: "Length", value: "50m, 100m" },
+        { label: "Application", value: "Cold lamination" },
       ],
     },
     {
@@ -185,6 +203,32 @@ const Products = () => {
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
         { label: "Application", value: "Foamboard, PVC, Aluminium" },
+      ],
+    },
+    {
+      name: "Double-sided Mounting Film",
+      category: "Finishing Films",
+      description:
+        "A clear polyester mounting film, coated on both sides with a permanent pressure sensitive acrylic adhesive, one of which is protected by a Kraft siliconized release liner and one side a film release liner. The perfect product for the mounting of graphics onto various substrates such as correx etc.",
+      image: mountingAdhesive,
+      specs: [
+        { label: "Thickness", value: "45 Micron" },
+        { label: "Finish", value: "N/A" },
+        { label: "Available Sizes", value: "1040mm, 1270mm" },
+        { label: "Length", value: "33m" },
+      ],
+    },
+    {
+      name: "Optically Clear Double-sided Mounting Film",
+      category: "Finishing Films",
+      description:
+        "A 100% optically transparent polyester film. Both sides of the film have a high-viscosity solvent-acrylic adhesive that are protected by a clear film lining. Used for special applications that require full clarity, such as mounting a print to acrylic or glass.",
+      image: mountingAdhesive,
+      specs: [
+        { label: "Thickness", value: "25 Micron" },
+        { label: "Finish", value: "N/A" },
+        { label: "Available Sizes", value: "1300mm" },
+        { label: "Length", value: "25m, 50m" },
       ],
     },
   ];
